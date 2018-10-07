@@ -1,0 +1,331 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Originally found on https://www.sharelatex.com/templates/cv-or-resume/smart-twenty-seconds-cv
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+
+% Command for printing framework bubbles
+\newcommand\modelling{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Dim}\\\textbf{reduction},%
+        \textbf{Logistic} \\\textbf{regression},
+        \textbf{Markov}\\\textbf{chains},
+        \textbf{Likelihood}\\\textbf{estimation},
+        \textbf{Naive}\\\textbf{Bayes},
+        \textbf{Conv}\\\textbf{Nets}
+    }
+    
+}
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Data}\\\textbf{Analysis},
+        \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{Biomedical} \\\textbf{Engineering},%
+        \textbf{Deep}\\\textbf{Learning},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Image}\\\textbf{recognition},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+% Programming skill bars
+\programming{{Pandas $\textbullet$ Keras  $\textbullet$ VTK / 1}, {JS $\textbullet$ SQL $\textbullet$ \large MATLAB / 2}, {C++ $\textbullet$ PHP $\textbullet$ Python / 5}}
+
+
+% Projects text
+\awards{
+\awarditems{2017}{EPSRC early career scientist fellowship top 10 finalist  for £1m}\\[1.5mm]
+\awarditems{2016}{Journal of Cardiovascular Imaging highly cited research award}\\[1.5mm]
+\awarditems{2015}{Imperial College Honorary Lecturer}\\[1.5mm]
+\awarditems{2014}{Medical Engineering UK best paper poster}\\[1.5mm]
+\awarditems{2012}{Hamlyn Robotics UK best paper poster}\\[1.5mm]
+\awarditems{1998}{University of Toronto Scholar award}\\[1.5mm]
+
+}
+\talks{
+\\[2mm]
+
+\textit{Recent only}\\[1mm]
+\talkitems{2018}{Prediction of pacing sites for cardiac pacemakers, IEEE EMBC}{USA}\\[2mm]
+\talkitems{2017}{Visualisation and uncertainty in whole-heart modelling, Zuse Maths Inst.}{Berlin} \\[2mm]
+\talkitems{2017}{Problem solving using biomedical imaging analysis, EuroSciCon}{UK} \\[2mm] 
+\talkitems{2015}{Data analytics and visualisation in interventional cardiac MRI, SCMR}{France}\\[2mm]
+\talkitems{2015}{Quantification algorithms to assess heart attacks from imaging, Hounsfield Lectures}{UK}\\[2mm]
+}
+
+\teaching{
+\\[1mm]
+\textit{Supervised theses (recent)}\\[1mm]
+\teachingitems{2017}{Model-based image analysis of cardiac wall thickness using measurements from CT} \\[1mm]
+\teachingitems{2017}{Image processing algorithms for measuring wall thickness in CMR} \\[1mm]
+\teachingitems{2016}{Tissue contact force sensing in uni and multi-directional catheters} \\[1mm] 
+\teachingitems{2016}{Robotic ablation catheter - experimentations on precision and control} \\[1mm]
+\teachingitems{2016}{Validation of an adapted Cosserat rod model for contact force estimation} \\[1mm]
+\teachingitems{2016}{Ablation path trajectories of a robotic catheter inside a heart phantom} \\[1mm]
+\begin{footnotesize}
+\textit{Years 2012 - 2016, 12 theses were supervised}\\
+\end{footnotesize}
+}
+
+\editorial{
+\\[1mm]
+\editorialitems{J. of Healthcare Engineering}{Editorial board}
+\editorialitems{Asian J. of Info. Technology}{Editorial board}
+\editorialitems{Trans. Pattern Analy. \& Mach. Intel.}{Reviewer}
+\editorialitems{Sensors}{Reviewer}
+\editorialitems{IEEE Trans. Medical Imaging}{Reviewer}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Rashed Karim} % Your name
+\cvjobtitle{ Image Data Scientist } % Job
+% title/career
+
+\cvlinkedin{/in/karimphd}
+\cvgithub{drkarim}
+\cvnumberphone{(44) 79 69 77 03 72} % Phone number
+\cvsite{bit.ly/drkarim} % Personal website
+\cvscholar{bit.ly/scholarX} % scholar
+\cvmail{rashed.karim@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2005 - 2009}
+        {}
+        {PhD. Computer Science }
+        {\href{http://www.doc.ic.ac.uk/}{Imperial College London}}
+        {}
+        {}
+	\twentyitem
+    	{2004 - 2005}
+		{}
+        {MSc. Advanced Computing \textnormal{(Distinction)}}
+        {\href{http://www.qmul.ac.uk/}{Queen Mary, U. of London}}
+        {}
+        {}
+    	\twentyitem
+    	{1998 - 2002}
+		{}
+        {BSc. Computing \& Mathematics}
+        {\href{http://www.utoronto.ca/}{University of Toronto, Canada}}
+        {}
+
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Sep 2010 -}
+		{Present}
+        {Research Fellow}
+        {\href{https://kclpure.kcl.ac.uk/portal/rashed.karim.html}{King's College London}}
+        {}
+        {\begin{itemize}
+       \item Making predictions from 3D imaging data using ML and AI. Quantitative analysis of data. Gaining over 10 years' experience in image data analytics. 
+\item Published 41 research papers in leading journals and conferences in last 7 years. An authority on cardiac image analysis
+\item Co-chaired and organised 3 international data challenges at premier medical imaging conferences
+\item Designed software for NHS research units in Leeds \& London. 
+\item Commercialisation of technology used for implanting cardiac pacemakers with Siemens Healthcare
+\item Long track record of project supervision: 42 individual projects and 18 BSc student projects (13/18 obtained a 1st grade). 
+       
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{2007 - }
+		{Present}
+        {Full Stack Development Consulting}
+        {\href{http://www.desilvatutors.co.uk/}{Karim Consulting LTD}}
+        {}
+        {
+        {
+    \begin{itemize}
+\item Architect and full-stack developer of a London agency's cloud-based CRM system in PHP/MySQL ($\approx$30,000 lines of code) 
+		\item The CRM software now runs most of the day-to-day operations of its business. As of Oct. 2018, there are 30 users, processing over 1000 claims and invoices each month. 
+    \end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{Sep 2009 -}
+		{Dec 2010}
+        {Research Associate}
+        {\href{http://www.imperial.ac.uk}{Imperial College London}}
+        {}
+        {
+        {\begin{itemize}
+        \item Designed software to recognise dead tissue from images, work was published as scientific article and cited 73 times on Google Scholar
+    \end{itemize}}
+        }
+     \\
+     \twentyitem
+   		{Sep 2007 -}
+		{Sep 2008}
+        {Software Developer Intern}
+        {\href{http://www.ey.com/}{Ernst and Young London}}
+        {}
+        {
+        \begin{itemize}
+        \item Member of infrastructure team, building plug-ins and deploying for EY global. Continued employment after internship. Declined offer of further employment to complete PhD.
+        \end{itemize}
+     	}   
+    	\\ 
+      \twentyitem
+   		{2003 - 04}
+		{}
+        {Lecturer in Mathematics}
+        {\href{http://www.primeasia.edu.bd/}{Primeasia university, Bangladesh}}
+        {
+        \begin{itemize}
+        \item 1st and 2nd year university-level calculus. Youngest lecturer in university. Resigned from post to pursue further study. 
+ 
+        \end{itemize}
+        }{}
+	\\ 
+      \twentyitem
+   		{2002 - 03}
+		{}
+        {Java developer}
+        {\href{https://en.wikipedia.org/wiki/BEA_Systems}{BEA Weblogic Dubai}}
+		{
+		\begin{itemize}
+		\item JSP and Servlets development. Sun Java certified programmer
+		\end{itemize}		
+		}{}
+	\\ 
+      \twentyitem
+   		{2001 - 02}
+		{}
+        {Part-time Tutor in Microprocessor Systems}
+        {\href{https://www.utoronto.ca}{University of Toronto}}
+		{}{}
+        
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\section{Publications}
+\begin{twenty}
+\twentyitemshort{Journals}{28 publications, 8 as first author, 4 as second}
+\twentyitemshort{Conference}{22 proceedings, 9 as lead author}
+\twentyitemshort{Abstracts}{24 clinical abstracts, 14 as first, second or lead author}
+\twentyitemshort{\textit{Summary}}{Published 50 articles in 10 years. 23 highly influential citations}
+\twentyitemshort{Profiles}{\bluehyperlink{http://bit.ly/scholarX}{Google scholar}, \bluehyperlink{http://bit.ly/semanticrk}{Semantic Scholar}, \bluehyperlink{http://bit.ly/pubmedrk}{PubMed}, \bluehyperlink{http://bit.ly/researchgaterk}{ResearchGate}, \bluehyperlink{http://bit.ly/orcidrk}{ORCID}, \bluehyperlink{http://bit.ly/publonsrk}{Publons}}
+\end{twenty}
+
+\newpage
+\makesecondprofile  % Print the sidebar % Print the sidebar
+\section{Projects in industry and academia}
+\begin{twenty}
+	\twentyitem
+    	{2016 - 18}
+		{}
+        {Surgical guidance for pacemaker implantation}
+        {\href{https://www.healthcare.siemens.co.uk/about}{Siemens}}
+        {}
+        {
+		Designed and wrote software to obtain live cardiac tissue information from imaging and projection onto a map. Also built a decision support system for surgeons to use this information and implant pacemakers in the patient's heart. First built as a prototype with Siemens Healthcare and later translated into a commercial system. Work is set to appear in the press in Nov. 2018.}
+		\\
+	\twentyitem
+    	{2018}
+		{}
+        {Neural networks for annotations}
+        {\href{http://www.medcai.co.uk}{MedcAI UK}}
+        {
+		Supervised a summer student to design a neural network that learns manual image annotations of radiologists. The network was trained on over 10,000 annotations. It took part in an international challenge held in MICCAI 2018, Granada, Spain, and came as one of top 5 algorithms. An online portal where this neural network can be run without any knowledge or experience of AI has been developed.}
+		\\
+	\twentyitem
+    	{2017}
+		{}
+        {Augmented reality for museums}
+        {\href{https://www.kcl.ac.uk/gordon/index.aspx}{Gordon museum of Pathology}}
+        {
+		Wrote full stack software of an augmented reality (AR) platform. The AR app runs on hand-held devices and is able to recognise 34 specimens in the museum and displays an AR layer with additional content. The system is in use regularly by visitors helping them explore in a completely different way. }
+		\\ 
+
+	\twentyitem
+	{2013 - 18}
+		{}
+        {Curating cardiac imaging data}
+        {\href{https://www.nihr.ac.uk/}{National Institute for Health Research}}
+        {Undertook a 5-year effort with international collaborators to collect well-curated MRI and CT imaging data. On these datasets, benchmarks were established for algorithm accuracy. Designed a system for algorithm evaluation and made the data open source. I co-chaired meetings held in  Nice (2012), Barcelona (2013) and Athens (2016) to discuss outcomes of these initiatives.  }
+	\\
+	\twentyitem
+	{2016}
+		{}
+        {Responsive design and RESTful APIs}
+        {\href{http://www.desilvatutors.co.uk}{De Silva Tutors UK}}
+        {
+Re-designed website with a new responsive design. Also re-wrote a number of its API in PHP, JS and SQL following a new RESTful architecture. Wrote new modules to integrate Google maps search for its clients and tutors. A new CV search implemented with with Elastic search engine. This boutique tutoring agency is one of the largest in London with over 100 tutors and 1000 clients in its books.}
+	\\
+	\twentyitem
+	{2013}
+		{}
+        {Dimensionality reduction of 3D data visualistions}
+        {\href{http://bit.ly/2Pjhm9x}{Wellcome Trust}}
+        {
+An ambitious project of my research lab to create the first 2D flat map of the heart, allowing an instant single shot view of 3D cardiac data. As lead in this project, a practical solution was engineered using spatial dimensionality reduction technique, implemented in C++ and demonstrated with live surgical data feed for clinical use. The technique, now pubished in \textit{Karim et al. Computerized Med. Img. Graphics, 2014}, has highly influenced research work in UPF Barcelona}
+
+	
+\end{twenty}
+
+\section{Community engagements}
+
+\begin{twenty}
+\community{2018}{Science exhibition}{Sutton Grammar School}
+\community{2016}{Science careers for school children}{Sutton Grammar School}
+\community{2015}{Science careers for school children}{Sutton High School} 
+\community{2014}{Biomedical engineering careers}{Sutton Grammar School}
+\community{2011}{Enganging the public in scientific research}{London ExCeL Centre} 
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\end{document} 
