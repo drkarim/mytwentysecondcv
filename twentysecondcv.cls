@@ -25,6 +25,7 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 
+\usepackage{etaremune}
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
@@ -432,7 +433,9 @@
 	}\\%
 }
 
-
+\newcommand{\justblue}[1]{%
+	{\addfontfeature{Color=pblue}{#1}}%
+	}}}
 
 %----------------------------------------------------------------------------------------
 %	 MARGINS AND LINKS
