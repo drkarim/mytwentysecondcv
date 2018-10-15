@@ -381,9 +381,12 @@
 	}\\
 }
 
-\newcommand{\twentyitemoneliner}[2]{%
-	#1&\parbox[t]{0.9\textwidth}{%
-		#2%
+\newcommand{\twentyitemoneliner}[3]{%
+	#1&\parbox[t]{0.83\textwidth}{%
+		\textbf{#2}%
+		\hfill%
+		{\footnotesize\addfontfeature{Color=pblue} #3}%
+        }\\%
 	}\\
 }
 
